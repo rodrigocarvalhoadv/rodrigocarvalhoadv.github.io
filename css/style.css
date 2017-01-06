@@ -22,7 +22,7 @@ a {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #209b60; }
+  color: #8b3225; }
   a:hover {
     color: #aeaeae; }
 
@@ -42,7 +42,7 @@ button:focus {
   outline: 0 !important; }
 
 .color_text {
-  color: #209b60; }
+  color: #8b3225; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
@@ -54,7 +54,7 @@ blockquote {
   blockquote h5 {
     margin-top: 10px;
     font-weight: 600;
-    color: #209b60; }
+    color: #8b3225; }
 
 /**spaces**/
 .space10 {
@@ -106,7 +106,7 @@ hr {
 .separator {
   width: 60px;
   height: 3px;
-  background: #000000;
+  background: #8b3225;
   margin: 40px auto;
   display: block; }
 
@@ -161,7 +161,7 @@ Buttons style
   padding: 12px 25px; }
 
 .btn-link {
-  color: #209b60; }
+  color: #8b3225; }
   .btn-link:hover {
     color: #999; }
 
@@ -169,11 +169,11 @@ Buttons style
   background-color: #eee;
   color: #333; }
   .btn-default:hover {
-    background-color: #209b60;
+    background-color: #8b3225;
     color: #fff; }
 
 .btn-skin {
-  background-color: #209b60;
+  background-color: #8b3225;
   color: #fff; }
   .btn-skin:hover {
     background-color: #333;
@@ -183,7 +183,7 @@ Buttons style
   background-color: #333;
   color: #fff; }
   .btn-dark:hover {
-    background-color: #209b60;
+    background-color: #8b3225;
     color: #fff; }
 
 .btn-white {
@@ -202,12 +202,12 @@ Buttons style
     background-color: #333; }
 
 .btn-border-skin {
-  border: 2px solid #209b60;
+  border: 2px solid #8b3225;
   background-color: transparent;
-  color: #209b60; }
+  color: #8b3225; }
   .btn-border-skin:hover {
     color: #fff;
-    background-color: #209b60; }
+    background-color: #8b3225; }
 
 .btn-border-white {
   border: 2px solid #fff;
@@ -231,7 +231,7 @@ Buttons style
   transition: all 0.3s; }
   .navbar-inverse.scrolled {
     padding: 0px;
-    background-color: rgba(0, 0, 0, 0.9); }
+    background-color: #8b3225; }
   .navbar-inverse .navbar-nav > li > a {
     font-family: "Lato", Arial, sans-serif;
     font-weight: 700;
@@ -244,7 +244,7 @@ Buttons style
       background-color: transparent; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  color: #209b60;
+  color: #000000;
   background-color: transparent; }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
@@ -257,11 +257,11 @@ Buttons style
     padding-bottom: 20px; }
 
   .navbar-right .dropdown-menu {
-    right: auto;
     left: auto; } }
 .navbar-brand > img {
   display: block;
-  margin-top: 4px; }
+  height: 30px;
+  }
 
 @media (max-width: 767px) {
   .navbar-inverse .navbar-toggle {
@@ -270,7 +270,10 @@ Buttons style
   .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: transparent; } }
 .parallax-section {
-  background: url("../images/bg-1.jpg") no-repeat;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),url("../images/riojaneiro1080p.jpg") no-repeat;
   height: 100%;
   background-size: cover;
   background-attachment: fixed; }
@@ -295,8 +298,13 @@ Buttons style
     .parallax-inner .parallax-content h2 {
       text-transform: uppercase;
       color: #fff;
+      font-weight: 400;
+      font-size: 40px; }
+    .parallax-inner .parallax-content h3 {
+      text-transform: uppercase;
+      color: #fff;
       font-weight: 100;
-      font-size: 60px; }
+      font-size: 40px; }
     .parallax-inner .parallax-content .flexslider {
       margin: 0px;
       border: 0px;
@@ -305,7 +313,7 @@ Buttons style
 /**about section**/
 .about-section {
   padding: 100px 0;
-  background: #8B3225; }
+  background: #dbdbdb; }
   .about-section h1 {
     font-weight: 300;
     font-size: 36px;
@@ -313,14 +321,39 @@ Buttons style
     .about-section h1 span {
       color: rgb(23, 20, 20);
       font-weight: 700; }
+  .about-section ul {
+        color:#000000;
+        font-size: 14px; }
+  .about-section p {
+        color:#000000;
+        font-size: 14px; }
+
+/**about person section**/
+.about-person-section {
+  padding: 100px 0;
+  background: #333; }
+  .about-person-section h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px; }
+    .about-person-section h1 span {
+      color: #fff;
+      font-weight: 700; }
+  .about-person-section ul {
+        color:#fff;
+        font-size: 14px; }
+  .about-person-section p {
+        color:#fff;
+        font-size: 14px; }
+
 
 /**portfolio section**/
 .portfolio {
   padding: 100px 0;
   padding-bottom: 0px;
-  background: #209b60; }
+  background: #333; }
   .portfolio .separator {
-    background-color: #fff; }
+    background-color: #8b3225; }
   .portfolio .col-sm-4 {
     padding: 0px; }
 
@@ -380,12 +413,18 @@ Buttons style
   border-radius: 50%;
   margin-right: 20px;
   font-size: 35px;
-  color: #209b60; }
+  color: #8b3225; }
 .service-list .content {
   overflow: hidden; }
   .service-list .content h3 {
     font-size: 20px;
     text-transform: capitalize; }
+.services-section h1{
+    color: #fff;
+}
+.services-section p{
+    color: #fff;
+}
 
 /**testimonials**/
 .testimonials {
@@ -421,7 +460,7 @@ Buttons style
   padding-bottom: 70px;
   background: #222; }
   .contact-section .separator {
-    background: #fff; }
+    background: #8b3225; }
   .contact-section .form-control {
     border: 0px;
     -webkit-border-radius: 0px;
@@ -460,7 +499,7 @@ Buttons style
     font-size: 20px; }
 
 .footer {
-  background: #209b60;
+  background: #8b3225;
   padding: 10px 0;
   color: #fff; }
 
@@ -471,3 +510,8 @@ Buttons style
     font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.margin-texts {
+    margin-left: 10px;
+    margin-right: 10px; 
+}
