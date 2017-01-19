@@ -22,9 +22,10 @@ a {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #8b3225; }
+  text-decoration: underline;
+  color: #770e01; }
   a:hover {
-    color: #aeaeae; }
+    color: #ff2205; }
 
 button {
   -moz-transition: all 0.3s;
@@ -220,8 +221,11 @@ Buttons style
 /* 
     Navbar css
 */
+#navbar[aria-expanded="true"]{
+  background: rgba(139, 50, 37, 0.9);  
+}
 .navbar-inverse {
-  background: transparent;
+  background: rgba(139, 50, 37, 0.7);
   border: 0px;
   margin: 0px;
   padding: 10px 0;
@@ -315,36 +319,43 @@ Buttons style
   padding: 100px 0;
   background: #dbdbdb; }
   .about-section h1 {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 36px;
-    line-height: 45px; }
+    line-height: 45px;
+    color: #000}
     .about-section h1 span {
-      color: rgb(23, 20, 20);
+      color: #000);
       font-weight: 700; }
   .about-section ul {
         color:#000000;
         font-size: 14px; }
   .about-section p {
         color:#000000;
-        font-size: 14px; }
+        font-size: 16px;
+        font-weight: 600}
+   .about-section li{
+    font-weight: 500;
+    font-size: 14px;
+  }
 
 /**about person section**/
 .about-person-section {
   padding: 100px 0;
-  background: #333; }
+  background: #5f5f5f; }
   .about-person-section h1 {
     font-weight: 300;
     font-size: 36px;
     line-height: 45px; }
     .about-person-section h1 span {
-      color: #fff;
+      color: #000;
       font-weight: 700; }
   .about-person-section ul {
-        color:#fff;
-        font-size: 14px; }
+        color:#000;
+        font-size: 16px; 
+        font-weight: 600}
   .about-person-section p {
-        color:#fff;
-        font-size: 14px; }
+        color:#000;
+        font-size: 16px; }
 
 
 /**portfolio section**/
