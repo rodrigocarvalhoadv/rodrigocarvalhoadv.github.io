@@ -22,6 +22,15 @@
     </head>
     <body data-spy="scroll">
         <div id="preloader"></div>
+        <!-- SDK Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!-- Static navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -42,7 +51,7 @@
                         <li><a href="#values">Valores</a></li>
                         <li><a href="#about_person">Rodrigo</a></li>
                         <li><a href="#">Área de Atuação</a></li>
-                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#news">Notícias</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
 
@@ -89,7 +98,7 @@
                 </div>
             </div>
         </section>
-        <!--end about section-->
+        <!--end about_office section-->
         
         <section id="mission" class="services-section">
             <div class="container">
@@ -108,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <!--end services section-->
+        <!--end mission section-->
         
          <section id="values" class="about-section overflow-hidden">
             <div class="container">
@@ -127,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <!--end about section-->
+        <!--end values section-->
         
         <section id="about_person" class="about-person-section overflow-hidden">
             <div class="container">
@@ -156,8 +165,23 @@
                 </div>
             </div>
         </section>
-        <!--end about rodrigo section-->
-
+        <!--end about_person section-->
+         
+        <section id="news" class="about-section overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h1>Notícias</h1>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row text-center">
+                   <div class="fb-page" data-href="https://www.facebook.com/FacebookforDevelopers/" data-tabs="timeline" data-width="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/FacebookforDevelopers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FacebookforDevelopers/">Facebook for Developers</a></blockquote></div>
+                </div>
+            </div>
+        </section>
+        <!-- end news section -->
+    
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="row">
@@ -200,7 +224,7 @@
                     </div>
                     <div class="col-sm-5 col-sm-offset-1">
                         <p><i class="ion-iphone"></i>(21) 996940040</p>
-                        <p><a href="#">rodrigocarvalho.adv@gmail.com</a></p>
+                        <p><a href="#">rodrigocarvalhogs.adv@gmail.com</a></p>
                         <hr>
                         <ul class="list-inline wow animated fadeInUp" data-wow-delay="0.2s">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
