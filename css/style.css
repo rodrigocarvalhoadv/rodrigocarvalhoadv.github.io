@@ -605,7 +605,8 @@ Areas Section
 }
 
 .special-feature i{
-    font-size: 38px;
+    font-size: 64px;
+    color: #8b3225;
 }
 
 .special-feature .s-feature-box:hover .mask-bottom {
