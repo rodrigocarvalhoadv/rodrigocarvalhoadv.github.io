@@ -11,7 +11,6 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="ion-icons/css/ionicons.min.css" rel="stylesheet">
         <link href="flexslider/flexslider.css" rel="stylesheet">
-        <link href="lightbox2/dist/css/lightbox.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,6 +30,7 @@
           js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+        
         <!-- Static navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -47,10 +47,9 @@
                     <ul class="nav navbar-nav navbar-right smooth-scroll">                      
                         <li><a href="#home">Início</a></li>
                         <li><a href="#about_office">Escritório</a></li>
-                        <li><a href="#mission">Missão</a></li>
-                        <li><a href="#values">Valores</a></li>
+                        <li><a href="#mission">Missão e Valores</a></li>
                         <li><a href="#about_person">Rodrigo</a></li>
-                        <li><a href="#areas_section">Área de Atuação</a></li>
+                        <li><a href="#areas">Área de Atuação</a></li>
                         <li><a href="#contact">Contato</a></li>
                         <li><a href="https://www.facebook.com/rodrigocarvalhogs.adv/" target="_blank">Notícias</a></li>
                     </ul>
@@ -79,7 +78,7 @@
         </section>
         <!--end home section-->
 
-            <section id="about_office" class="about-section overflow-hidden">
+            <section id="about_office" class="about-office-section overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
@@ -105,58 +104,52 @@
                 </div>
                 <br/>
                 <div class="text-center smooth-scroll">
-                    <a class="btn btn-lg btn-skin margin-btm-10" href="#mission">Missão <i class="ion-arrow-down-c"></i></a>
+                    <a class="btn btn-lg btn-skin margin-btm-10" href="#mission">Missão e Valores <i class="ion-arrow-down-c"></i></a>
                 </div>
             </div>
         </section>
         <!--end about_office section-->
         
-        <section id="mission" class="services-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <h1>Missão</h1>
+        <section id="mission" class="mission-section">
+            <div class="container" class="wow animated fadeInLeft" data-wow-delay="0.2s">
+                <div class="col-md-6 col-sm-6 margin-b-20">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <h1>Missão</h1>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="row margin-texts">
+                        <div>
+                             <p>
+                                Buscar saciar os anseios jurídicos de nossos clientes, prestando serviços jurídicos, com independência; postura humanística e sempre buscando o maior rigor técnico.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="separator"></div>
-                <div class="row margin-texts">
-                    <div class="wow animated fadeInLeft" data-wow-delay="0.2s">
-                         <p>
-                            Buscar saciar os anseios jurídicos de nossos clientes, prestando serviços jurídicos, com independência; postura humanística e sempre buscando o maior rigor técnico.
-                        </p>
+                 <div class="col-md-6 col-sm-6 margin-b-20">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <h1>Valores</h1>
+                        </div>
                     </div>
-                </div>
-                <br/>
-                <div class="text-center smooth-scroll">
-                    <a class="btn btn-lg btn-skin margin-btm-10" href="#values">Valores <i class="ion-arrow-down-c"></i></a>
-                </div>
-            </div>
-        </section>
-        <!--end mission section-->
-        
-         <section id="values" class="about-section overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <h1>Valores</h1>
-                    </div>
-                </div>
-                <div class="separator"></div>
-                <div class="row margin-texts">
-                    <div class="wow animated fadeInRight" data-wow-delay="0.2s">
-                         <p>
-                            Respeito à constituição federal; bem como as normas infra constitucionais, às normas ético-profissionais, transparência; e a independência profissional.
-                        </p>
+                    <div class="separator"></div>
+                    <div class="row margin-texts">
+                        <div>
+                             <p>
+                                Respeito à constituição federal; bem como as normas infra constitucionais, às normas ético-profissionais, transparência; e a independência profissional.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br/>
+            <div class="separator"></div>
             <div class="text-center smooth-scroll">
                 <a class="btn btn-lg btn-skin margin-btm-10" href="#about_person">Rodrigo Carvalho <i class="ion-arrow-down-c"></i></a>
             </div>
         </section>
-        <!--end values section-->
-        
+        <!--end mission section-->
+    
         <section id="about_person" class="about-person-section overflow-hidden">
             <div class="container">
                 <div class="row">
@@ -184,14 +177,15 @@
             </div>
             <br/>
             <div class="text-center smooth-scroll">
-                <a class="btn btn-lg btn-skin margin-btm-10" href="#c">Entre em contato! <i class="ion-arrow-down-c"></i></a>
+                <a class="btn btn-lg btn-skin margin-btm-10" href="#areas">Áreas de Atuação <i class="ion-arrow-down-c"></i></a>
+                <a class="btn btn-lg btn-skin margin-btm-10" href="#contact">Entre em contato! <i class="ion-arrow-down-c"></i></a>
             </div>
         </section>
         <!--end about_person section-->
     
     
-            <!--services section start-->
-        <section id="areas_section" class="areas-section">
+        <!--services section start-->
+        <section id="areas" class="areas-section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 text-center">
@@ -200,7 +194,7 @@
                 </div>
                 <div class="separator"></div>
                 <div class="row special-feature">
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="200ms">
                             <div class="mask-top">
                                 <!-- Icon -->
@@ -210,20 +204,24 @@
                             </div>
                             <div class="mask-bottom">
                                 <!-- Icon -->
-                                <i class="ti-image"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Direito Tributário</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Consultoria em matéria tributária;</li>
+                                    <li>Atuação em processos administrativos judiciários;</li>
+                                    <li>Análise e proposição de ações criando a economia fiscal; revisão; repetição de indébito; defesas em sede de execução fiscal.</li>
+                                </ul>
                             </div>
                         </div>
 
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="300ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-mobile"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Direito Civil</h4>
                             </div>
@@ -233,15 +231,19 @@
                                 <!-- Title -->
                                 <h4>Direito Civil</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Analise e elaboração de contratos em geral;</li>
+                                    <li>Consultoria e contencioso civil em geral, incluindo as áreas de responsabilidade civil; obrigações; locações residenciais; família e sucessões;</li>
+                                    <li>Assessoria em direito real imobiliário.</li>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="400ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-ruler-pencil"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Direito Previdenciário</h4>
                             </div>
@@ -251,36 +253,44 @@
                                 <!-- Title -->
                                 <h4>Direito Previdenciário</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Contencioso previdenciário, judicial ou administrativo em todas as instâncias</li>
+                                    <li>Consultoria e pareceres na área previdenciária, criando o planejamento estratégico, também na área da previdência complementar.</li>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
-                        <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="500ms">
-                            <div class="mask-top">
-                                <!-- Icon -->
-                                <i class="ti-gift"></i>
-                                <!-- Title -->
-                                <h4>Direito do Trabalho</h4>
-                            </div>
-                            <div class="mask-bottom">
-                                <!-- Icon -->
-                                <i class="ti-gift"></i>
-                                <!-- Title -->
-                                <h4>Direito do Trabalho</h4>
-                                <!-- Text -->
-                                <p>Assan Release the updates time to time. more big updates are coming in future. keep in touch and and enjoy all updates free of cost. </p>
-                            </div>
-                        </div>
-                    </div><!--services col-->
+
                 </div>
                 <!--service row end-->
                 <div class="row special-feature">
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
+                        <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="500ms">
+                            <div class="mask-top">
+                                <!-- Icon -->
+                                <i class="fa fa-university"></i>
+                                <!-- Title -->
+                                <h4>Direito do Trabalho</h4>
+                            </div>
+                            <div class="mask-bottom">
+                                <!-- Icon -->
+                                <i class="ti-gift"></i>
+                                <!-- Title -->
+                                <h4>Direito do Trabalho</h4>
+                                <!-- Text -->
+                                <ul>
+                                    <li>Contencioso trabalhista , em todos os graus de jurisdição;</li>
+                                    <li>Consultoria em questões trabalhistas;</li>
+                                    <li>Assessoria jurídica em relações trabalhistas, na elaboração de acordos e convenções de trabalho;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--services col-->
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="200ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-email"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Direito Empresarial</h4>
                             </div>
@@ -290,16 +300,19 @@
                                 <!-- Title -->
                                 <h4>Direito Empresarial</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Analise, elaboração e negociação de contratos comerciais em geral, contratos comerciais em geral; contratos de franquia empresarial, arrendamentos e locações comerciais;</li>
+                                    <li>Constituição e reorganização de sociedades e direito societário em geral;</li>
+                                </ul>
                             </div>
                         </div>
 
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="300ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-light-bulb"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Direito Administrativo</h4>
                             </div>
@@ -309,15 +322,25 @@
                                 <!-- Title -->
                                 <h4>Direito Administrativo</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Responsabilidade civil do estado:</li>
+                                    <ul>
+                                        <li>Consultoria e elaboração de pareceres sobre responsabilidade civil contratual e extracontratual do estado;</li>
+                                        <li>Atuação em contencioso judicial;</li>
+                                        <li>Atuação em inquéritos administrativos;</li>
+                                    </ul>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                </div>
+                 <!--service row end-->
+                <div class="row special-feature">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="400ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-bar-chart"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Servidor Público</h4>
                             </div>
@@ -327,15 +350,19 @@
                                 <!-- Title -->
                                 <h4>Servidor Público</h4>
                                 <!-- Text -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+                                <ul>
+                                    <li>Consultas e elaboração de pareceres nas matérias relativas a servidores públicos;</li>
+                                    <li>Acompanhamento e representação em processos administrativos disciplinais;</li>
+                                    <li>Representação em contencioso administrativo e judicial.</li>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="500ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-location-arrow"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Intervenção do estado na propriedade</h4>
                             </div>
@@ -343,17 +370,21 @@
                                 <!-- Icon -->
                                 <i class="ti-location-arrow"></i>
                                 <!-- Title -->
-                                <h4>Intervenção do estado na propriedade</h4>
+                                <h3 class="small-title">Intervenção do estado na propriedade</h3>
                                 <!-- Text -->
-                                <p>Assan Release the updates time to time. more big updates are coming in future. keep in touch and and enjoy all updates free of cost. </p>
+                                <ul class="small-text" style="width:100%">
+                                    <li >Consultoria e elaboração de pareceres em matérias referentes a intervenção do estado na propriedade privada; desapropriação; servidão administrativa; requisição administrativa; ocupação temporária; limitação administrativa e tombamento;</li>
+                                    <li>Atuação em contencioso administrativo com a elaboração de recursos e outras impugnações administrativas;</li>
+                                    <li>Representação em contencioso judicial, com a propositura de ações anulatórias de autos de infração; ações indenizatórias e ações de desapropriação.</li>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
-                    <div class="col-md-3 col-sm-6 margin-b-20">
+                    <div class="col-md-4 col-sm-6 margin-b-20">
                         <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="500ms">
                             <div class="mask-top">
                                 <!-- Icon -->
-                                <i class="ti-location-arrow"></i>
+                                <i class="fa fa-university"></i>
                                 <!-- Title -->
                                 <h4>Assessoria empresarial / Advocacia de partido</h4>
                             </div>
@@ -363,12 +394,19 @@
                                 <!-- Title -->
                                 <h4>Assessoria empresarial / Advocacia de partido</h4>
                                 <!-- Text -->
-                                <p>Assan Release the updates time to time. more big updates are coming in future. keep in touch and and enjoy all updates free of cost. </p>
+                                <ul>
+                                    <li>Atendimento jurídico personalizado e assessoria jurídico-empresarial às pessoas jurídicas de todos os gêneros;</li>
+                                    <li>Os pacotes para assessoramento jurídico-empresarial possuem preços atrativos, de forma que possa gerar acessibilidade e planejamento empresarial adequado.</li>
+                                </ul>
                             </div>
                         </div>
                     </div><!--services col-->
                 </div>
                 <!--service row end-->
+            </div>
+            <br/>
+            <div class="text-center smooth-scroll">
+                <a class="btn btn-lg btn-skin margin-btm-10" href="#contact">Entre em contato! <i class="ion-arrow-down-c"></i></a>
             </div>
         </section>
         <!--end services section-->
@@ -384,9 +422,10 @@
                 <div class="separator"></div>
                 <div class="row">
                     <div class="col-sm-6 margin-btm-30">
-                        
-                        <p><i class="ion-android-phone-portrait"></i> Telefone: (21) 996940040</p>
-                        <p><i class="ion-email"></i> Email: <a href="mailto:rodrigocarvalhogs.adv@gmail.com">rodrigocarvalhogs.adv@gmail.com</a></p>
+                        <h4>Meus Contatos:</h4>
+                        <p><i class="ion-android-phone-portrait">&nbsp&nbsp</i><a href="tel:021996940040">(21) 99694-0040</a></p>
+                        <p><i class="ion-email"></i>&nbsp&nbsp<a href="mailto:rodrigocarvalhogs.adv@gmail.com">rodrigocarvalhogs.adv@gmail.com</a></p>
+                        <p><i class="ion-email"></i>&nbsp&nbsp<a href="mailto:rodriggo_carvalho@hotmail.com">rodriggo_carvalho@hotmail.com</a></p>
                         <hr>
                         <!--<ul class="list-inline wow animated fadeInUp" data-wow-delay="0.2s">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -396,7 +435,8 @@
                             <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                             <li><a href="#"><i class="ion-social-instagram"></i></a></li>
                         </ul> -->
-                        
+                        <h4>Me envie um email:</h4>
+                        <br/>
                         <form method="post" action="#" class="assan-contact">
                             <div class="row">
                                 <div class="col-sm-12"> 
@@ -428,7 +468,8 @@
 
                     </div>
                     <div class="col-sm-5 col-sm-offset-1">
-                        <div class="fb-page" data-href="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/" data-tabs="timeline" data-width="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/">Rodrigo Carvalho - Assessoria Jurídica</a></blockquote></div>
+                        <h4>Minha Página no Facebook:</h4>
+                        <div class="fb-page" data-href="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/" data-tabs="timeline" data-width="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Rodrigo-Carvalho-Assessoria-Jur%C3%ADdica-1789188034667993/">Rodrigo Carvalho - Assessoria Jurídica</a></blockquote></div>
                     </div>
                 </div>
             </div>
@@ -448,7 +489,6 @@
         <script src="js/jquery.stellar.min.js"></script>
         <script src="flexslider/jquery.flexslider-min.js"></script>
         <script src="contact_form/contact.js"></script>
-        <script src="lightbox2/dist/js/lightbox.min.js" type="text/javascript"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>
