@@ -263,9 +263,11 @@ Buttons style
   .navbar-right .dropdown-menu {
     left: auto; } }
 .navbar-brand > img {
-  display: block;
-  height: 30px;
+  display: inline;
+  height: 35px;
+  margin-right: 5px;
   }
+
 
 @media (max-width: 767px) {
   .navbar-inverse .navbar-toggle {
